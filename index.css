@@ -140,7 +140,11 @@ body {
 	margin: 0;
 	background-color: #AFBED1;
 }
-
+h2{
+    display: flex;
+    justify-content: center;
+    
+}
 main {
 	width: 100vw;
 	max-width: 400px;
@@ -153,6 +157,7 @@ main {
 		0 5px 20px 5px rgba(0, 0, 0, 0.08),
 		0 2px 6px rgba(0, 0, 0, 0.1);
 	background-color: #f7f5eb;
+    border-radius: 20px;
 }
 
 #screen {
@@ -165,6 +170,7 @@ main {
 	height: 50px;
 	line-height: 50px;
 	padding: 50px 36px 0;
+    border-radius: 20px;
 }
 
 #output {
@@ -180,6 +186,7 @@ main {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-columns: repeat(4, 1fr);
 	background-color: #555;
+    border-radius: 20px;
 }
 
 
@@ -188,11 +195,12 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; }
 button {
 	color: rgba(255, 255, 255, 0.7);
 	background: none;
-	font-size: 20px;
+	font-size: 30px;
 	font-family: inherit;
 	outline: none;
 	padding: 0;
 	overflow: hidden;
+    
 }
 
 button::after {
@@ -206,6 +214,7 @@ button::after {
 	top: 0;
 	transition: .2s;
 	pointer-events: none;
+    
 }
 
 button:hover::after {
@@ -226,6 +235,7 @@ button::before {
 	transition: .3s;
 	animation: .2s 0s 1 bloop;
 	pointer-events: none;
+    
 }
 
 @keyframes bloop{
@@ -242,6 +252,8 @@ button:active::before {
 button:nth-child(4n){
 	background-color: #EAC5D8;
 	color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 button:nth-child(4n)::after, button:nth-child(4n)::before{
